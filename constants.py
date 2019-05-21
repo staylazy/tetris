@@ -1,134 +1,136 @@
-L = [ ['X','0'], #LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
-	  ['X','0'],
-	  ['X','X'] ]
+from colors import *
 
-L1 = [ ['X','X','X'],
-	   ['X','0','0'] ]
+L = [ [('X', RED),'0'], #LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+	  [('X', RED),'0'],
+	  [('X', RED),('X', RED)] ]
 
-L2 = [ ['X','X'],
-	   ['0','X'],
-       ['0','X'] ]
+L1 = [ [('X', RED),('X', RED),('X', RED)],
+	   [('X', RED),'0','0'] ]
 
-L3 = [ ['0','0','X'],
-       ['X','X','X'] ]
+L2 = [ [('X', RED),('X', RED)],
+	   ['0',('X', RED)],
+       ['0',('X', RED)] ]
 
-LD = [ ['A','0'],
-	   ['A','0'],
-	   ['A','A'] ]
+L3 = [ ['0','0',('X', RED)],
+       [('X', RED),('X', RED),('X', RED)] ]
 
-LD1 = [ ['A','A','A'],
-	    ['A','0','0'] ]
+LD = [ [('A', RED),'0'],
+	   [('A', RED),'0'],
+	   [('A', RED),('A', RED)] ]
 
-LD2 = [ ['A','A'],
-	    ['0','A'],
-        ['0','A'] ]
+LD1 = [ [('A', RED),('A', RED),('A', RED)],
+	    [('A', RED),'0','0'] ]
 
-LD3 = [ ['0','0','A'],
-        ['A','A','A'] ]
+LD2 = [ [('A', RED),('A', RED)],
+	    ['0',('A', RED)],
+        ['0',('A', RED)] ]
 
-I = [ ['X'],#IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-	  ['X'],
-	  ['X'],
-	  ['X'] ]
+LD3 = [ ['0','0',('A', RED)],
+        [('A', RED),('A', RED),('A', RED)] ]
 
-I1 = [ ['X','X','X','X'] ]
+I = [ [('X', ORANGE)],#IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+	  [('X', ORANGE)],
+	  [('X', ORANGE)],
+	  [('X', ORANGE)] ]
 
-ID = [ ['A'],
-	   ['A'],
-	   ['A'],
-	   ['A'] ]
+I1 = [ [('X', ORANGE),('X', ORANGE),('X', ORANGE),('X', ORANGE)] ]
 
-ID1 = [ ['A','A','A','A'] ]
+ID = [ [('A', ORANGE)],
+	   [('A', ORANGE)],
+	   [('A', ORANGE)],
+	   [('A', ORANGE)] ]
 
-J = [ ['0','X'],#JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
-	  ['0','X'], 
-	  ['X','X'] ]
+ID1 = [ [('A', ORANGE),('A', ORANGE),('A', ORANGE),('A', ORANGE)] ]
 
-J1 = [ ['X','0','0'],
-	   ['X','X','X'] ]
+J = [ ['0',('X', YELLOW)],#JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+	  ['0',('X', YELLOW)], 
+	  [('X', YELLOW),('X', YELLOW)] ]
 
-J2 = [ ['X','X'],
-	   ['X','0'], 
-	   ['X','0'] ]
+J1 = [ [('X', YELLOW),'0','0'],
+	   [('X', YELLOW),('X', YELLOW),('X', YELLOW)] ]
 
-J3 = [ ['X','X','X'],
-	   ['0','0','X'] ]
+J2 = [ [('X', YELLOW),('X', YELLOW)],
+	   [('X', YELLOW),'0'], 
+	   [('X', YELLOW),'0'] ]
 
-JD = [ ['0','A'],
-	   ['0','A'],
-	   ['A','A'] ]
+J3 = [ [('X', YELLOW),('X', YELLOW),('X', YELLOW)],
+	   ['0','0',('X', YELLOW)] ]
 
-JD1 = [ ['A','0','0'],
-	    ['A','A','A'] ]
+JD = [ ['0',('A', YELLOW)],
+	   ['0',('A', YELLOW)],
+	   [('A', YELLOW),('A', YELLOW)] ]
 
-JD2 = [ ['A','A'],
-	    ['A','0'], 
-	    ['A','0'] ]
+JD1 = [ [('A', YELLOW),'0','0'],
+	    [('A', YELLOW),('A', YELLOW),('A', YELLOW)] ]
 
-JD3 = [ ['A','A','A'],
-	    ['0','0','A'] ]
+JD2 = [ [('A', YELLOW),('A', YELLOW)],
+	    [('A', YELLOW),'0'], 
+	    [('A', YELLOW),'0'] ]
 
-O = [ ['X','X'], #OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-	  ['X','X'] ]
+JD3 = [ [('A', YELLOW),('A', YELLOW),('A', YELLOW)],
+	    ['0','0',('A', YELLOW)] ]
 
-OD = [ ['A','A'],
-	   ['A','A'] ]
+O = [ [('X', GREEN),('X', GREEN)], #OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+	  [('X', GREEN),('X', GREEN)] ]
 
-T = [ ['0','X','0'],      #TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
-	  ['X','X','X'] ]
+OD = [ [('A', GREEN),('A', GREEN)],
+	   [('A', GREEN),('A', GREEN)] ]
 
-T1 = [ ['X','0'],     
-	   ['X','X'],
-	   ['X','0'] ]
+T = [ ['0',('X', TEAL),'0'],      #TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+	  [('X', TEAL),('X', TEAL),('X', TEAL)] ]
 
-T2 = [ ['X','X','X'],
-	   ['0','X','0'] ]
+T1 = [ [('X', TEAL),'0'],     
+	   [('X', TEAL),('X', TEAL)],
+	   [('X', TEAL),'0'] ]
 
-T3 = [ ['0','X'],     
-	   ['X','X'],
-	   ['0','X'] ]
+T2 = [ [('X', TEAL),('X', TEAL),('X', TEAL)],
+	   ['0',('X', TEAL),'0'] ]
 
-TD =  [ ['0','A','0'],     
-	    ['A','A','A'] ]
+T3 = [ ['0',('X', TEAL)],     
+	   [('X', TEAL),('X', TEAL)],
+	   ['0',('X', TEAL)] ]
 
-TD1 = [ ['A','0'],     
-	    ['A','A'],
-	    ['A','0'] ]
+TD =  [ ['0',('A', TEAL),'0'],     
+	    [('A', TEAL),('A', TEAL),('A', TEAL)] ]
 
-TD2 = [ ['A','A','A'],
-	    ['0','A','0'] ]
+TD1 = [ [('A', TEAL),'0'],     
+	    [('A', TEAL),('A', TEAL)],
+	    [('A', TEAL),'0'] ]
 
-TD3 = [ ['0','A'],     
-	    ['A','A'],
-	    ['0','A'] ]
+TD2 = [ [('A', TEAL),('A', TEAL),('A', TEAL)],
+	    ['0',('A', TEAL),'0'] ]
 
-S = [['0','X','X'], #SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
-	 ['X','X','0']     ]
+TD3 = [ ['0',('A', TEAL)],     
+	    [('A', TEAL),('A', TEAL)],
+	    ['0',('A', TEAL)] ]
 
-S1 = [['X','0'],
-	  ['X','X'],
-	  ['0','X']]
+S = [['0',('X', BLUE),('X', BLUE)], #SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+	 [('X', BLUE),('X', BLUE),'0']     ]
 
-SD1 = [['A','0'],
-	   ['A','A'],
-	   ['0','A']]
+S1 = [[('X', BLUE),'0'],
+	  [('X', BLUE),('X', BLUE)],
+	  ['0',('X', BLUE)]]
 
-SD = [['0','A','A'],
-	  ['A','A','0']     ]	 
+SD1 = [[('A', BLUE),'0'],
+	   [('A', BLUE),('A', BLUE)],
+	   ['0',('A', BLUE)]]
 
-Z = [ ['X','X','0'], #ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
-	  ['0','X','X'] ]
+SD = [['0',('A', BLUE),('A', BLUE)],
+	  [('A', BLUE),('A', BLUE),'0']     ]	 
 
-Z1 = [ ['0','X'],
-	   ['X','X'],
-	   ['X','0'] ]
+Z = [ [('X', PURPLE),('X', PURPLE),'0'], #ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+	  ['0',('X', PURPLE),('X', PURPLE)] ]
 
-ZD = [ ['A','A','0'],
-	   ['0','A','A'] ]
+Z1 = [ ['0',('X', PURPLE)],
+	   [('X', PURPLE),('X', PURPLE)],
+	   [('X', PURPLE),'0'] ]
 
-ZD1 = [ ['0','A'],
-	    ['A','A'],
-	   	['A','0'] ]
+ZD = [ [('A', PURPLE),('A', PURPLE),'0'],
+	   ['0',('A', PURPLE),('A', PURPLE)] ]
+
+ZD1 = [ ['0',('A', PURPLE)],
+	    [('A', PURPLE),('A', PURPLE)],
+	   	[('A', PURPLE),'0'] ]
 #          1   2   3   4    5   6   7   8     9   10  11   12 13 14  15     16 17    18 19
 SHAPES = [[L, L1, L2, L3], [J, J1, J2, J3], [O], [I, I1], [T, T1, T2, T3], [S, S1], [Z, Z1]]
 
